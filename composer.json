@@ -1,0 +1,44 @@
+{
+  "name": "yourusername/wp-link-sweeper",
+  "description": "Fast, safe broken link scanner with bulk find/replace and auto-fix rules for WordPress content.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "broken-links",
+    "link-checker",
+    "seo",
+    "maintenance"
+  ],
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "you@example.com",
+      "homepage": "https://yourwebsite.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "WP_Link_Sweeper\\": "includes/"
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=WordPress --extensions=php includes/ wp-link-sweeper.php",
+    "phpcbf": "phpcbf --standard=WordPress --extensions=php includes/ wp-link-sweeper.php",
+    "test": "phpcs --standard=WordPress --extensions=php includes/ wp-link-sweeper.php"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

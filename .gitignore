@@ -1,0 +1,28 @@
+# WordPress
+*.log
+.htaccess
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# Build artifacts
+*.zip
+build/
+dist/
+
+# Testing
+.phpunit.result.cache
+phpunit.xml
