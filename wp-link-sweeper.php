@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: WP Link Sweeper – Broken Link Finder + Auto Fixer
- * Plugin URI: https://github.com/yourusername/wp-link-sweeper
+ * Plugin URI: https://github.com/mubseoul/wp-link-sweeper
  * Description: Fast, safe broken link scanner with bulk find/replace and auto-fix rules for WordPress content.
  * Version: 1.0.0
  * Requires at least: 6.0
  * Requires PHP: 8.0
- * Author: Your Name
- * Author URI: https://yourwebsite.com
+ * Author: Mubseoul
+ * Author URI: https://mubseoul.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wp-link-sweeper

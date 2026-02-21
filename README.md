@@ -30,7 +30,7 @@ A fast, safe WordPress plugin that scans your content for broken links and provi
 ### Auto-Fix Rules
 
 - **Pattern Matching**: Create rules for automatic URL replacement
-- **Wildcard Support**: Use `*` to preserve URL paths (e.g., `oldsite.com/*` ’ `newsite.com/*`)
+- **Wildcard Support**: Use `*` to preserve URL paths (e.g., `oldsite.com/*` ï¿½ `newsite.com/*`)
 - **Rule Management**: Enable/disable rules without deleting them
 - **Dry Run**: Preview rule application before executing
 
@@ -61,21 +61,21 @@ A fast, safe WordPress plugin that scans your content for broken links and provi
 ### From ZIP File
 
 1. Download the plugin ZIP file
-2. Go to WordPress admin ’ Plugins ’ Add New ’ Upload Plugin
+2. Go to WordPress admin ï¿½ Plugins ï¿½ Add New ï¿½ Upload Plugin
 3. Choose the ZIP file and click "Install Now"
 4. Activate the plugin
-5. Navigate to Tools ’ Link Sweeper
+5. Navigate to Tools ï¿½ Link Sweeper
 
 ### Manual Installation
 
 1. Upload the `wp-link-sweeper` folder to `/wp-content/plugins/`
 2. Activate the plugin through the Plugins menu
-3. Navigate to Tools ’ Link Sweeper
+3. Navigate to Tools ï¿½ Link Sweeper
 
 ### From Source (Development)
 
 ```bash
-git clone https://github.com/yourusername/wp-link-sweeper.git
+git clone https://github.com/mubseoul/wp-link-sweeper.git
 cd wp-link-sweeper
 # If using Composer (optional)
 composer install
@@ -85,7 +85,7 @@ composer install
 
 ### Running Your First Scan
 
-1. Go to **Tools ’ Link Sweeper**
+1. Go to **Tools ï¿½ Link Sweeper**
 2. Click **Start New Scan**
 3. The scanner will:
    - Extract all URLs from your content
@@ -138,7 +138,7 @@ composer install
 ### Basic Functionality
 
 - [ ] Install and activate plugin
-- [ ] Access admin page at Tools ’ Link Sweeper
+- [ ] Access admin page at Tools ï¿½ Link Sweeper
 - [ ] All tabs load without errors
 - [ ] Settings save successfully
 
@@ -257,8 +257,8 @@ Contributions are welcome! Please follow these guidelines:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/wp-link-sweeper/issues)
-- **Documentation**: [Wiki](https://github.com/yourusername/wp-link-sweeper/wiki)
+- **Issues**: [GitHub Issues](https://github.com/mubseoul/wp-link-sweeper/issues)
+- **Documentation**: [Wiki](https://github.com/mubseoul/wp-link-sweeper/wiki)
 - **WordPress.org**: [Support Forum](https://wordpress.org/support/plugin/wp-link-sweeper)
 
 ## License
@@ -267,7 +267,7 @@ GPLv2 or later. See [LICENSE](LICENSE) file.
 
 ## Credits
 
-Developed by [Your Name](https://yourwebsite.com)
+Developed by [Mubseoul](https://mubseoul.com)
 
 Special thanks to:
 - WordPress community

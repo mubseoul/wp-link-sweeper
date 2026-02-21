@@ -1,5 +1,5 @@
 {
-  "name": "yourusername/wp-link-sweeper",
+  "name": "mubseoul/wp-link-sweeper",
   "description": "Fast, safe broken link scanner with bulk find/replace and auto-fix rules for WordPress content.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -13,9 +13,8 @@
   ],
   "authors": [
     {
-      "name": "Your Name",
-      "email": "you@example.com",
-      "homepage": "https://yourwebsite.com"
+      "name": "Mubseoul",
+      "homepage": "https://mubseoul.com"
     }
   ],
   "require": {

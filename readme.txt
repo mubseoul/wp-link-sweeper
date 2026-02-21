@@ -149,8 +149,8 @@ All scan data is stored locally in your WordPress database.
 
 == Support ==
 
-* Documentation: [GitHub Wiki](https://github.com/yourusername/wp-link-sweeper/wiki)
-* Issues: [GitHub Issues](https://github.com/yourusername/wp-link-sweeper/issues)
+* Documentation: [GitHub Wiki](https://github.com/mubseoul/wp-link-sweeper/wiki)
+* Issues: [GitHub Issues](https://github.com/mubseoul/wp-link-sweeper/issues)
 * Support Forum: [WordPress.org](https://wordpress.org/support/plugin/wp-link-sweeper)
 
 == Roadmap ==
@@ -166,4 +166,4 @@ Planned features for future versions:
 
 == Credits ==
 
-Developed with ❤️ for the WordPress community.
+Developed by [Mubseoul](https://mubseoul.com) with ❤️ for the WordPress community.
