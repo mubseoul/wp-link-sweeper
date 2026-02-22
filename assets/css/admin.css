@@ -99,6 +99,26 @@
 	margin-top: 20px;
 }
 
+/* Export Section */
+.ls-export-section {
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+}
+
+.ls-export-section .button .dashicons {
+	line-height: inherit;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.ls-export-section .description {
+	margin: 10px 0 0 0;
+	font-size: 13px;
+}
+
 /* Quick Actions */
 .ls-quick-actions ul {
 	list-style: none;

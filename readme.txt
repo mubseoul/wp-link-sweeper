@@ -4,7 +4,7 @@ Tags: broken links, link checker, seo, maintenance, links
 Requires at least: 6.0
 Tested up to: 6.4
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,6 +120,13 @@ Currently, it works on individual sites. Full multisite network support is plann
 
 == Changelog ==
 
+= 1.1.0 =
+* Added CSV export functionality for broken links
+* Export respects current filters (status, post type, domain)
+* Export includes all link details and affected posts
+* Improved admin UI with export button
+* Enhanced data portability
+
 = 1.0.0 =
 * Initial release
 * Core scanning functionality
@@ -133,6 +140,9 @@ Currently, it works on individual sites. Full multisite network support is plann
 * i18n ready
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+New feature: Export broken links to CSV! Now you can export all your link data for reporting and analysis.
 
 = 1.0.0 =
 Initial release. Install and start finding broken links!

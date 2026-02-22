@@ -35,6 +35,16 @@ $available_post_types = Utils::get_available_post_types();
 ?>
 
 <div class="ls-broken-links">
+	<div class="ls-export-section">
+		<button type="button" id="ls-export-csv" class="button button-secondary">
+			<span class="dashicons dashicons-download"></span>
+			<?php esc_html_e( 'Export to CSV', 'wp-link-sweeper' ); ?>
+		</button>
+		<p class="description">
+			<?php esc_html_e( 'Export all links matching current filters to CSV file.', 'wp-link-sweeper' ); ?>
+		</p>
+	</div>
+
 	<div class="ls-filters">
 		<form method="get">
 			<input type="hidden" name="page" value="wp-link-sweeper">

@@ -3,7 +3,7 @@
  * Plugin Name: WP Link Sweeper – Broken Link Finder + Auto Fixer
  * Plugin URI: https://github.com/mubseoul/wp-link-sweeper
  * Description: Fast, safe broken link scanner with bulk find/replace and auto-fix rules for WordPress content.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 6.0
  * Requires PHP: 8.0
  * Author: Mubseoul
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants.
-define( 'WP_LINK_SWEEPER_VERSION', '1.0.0' );
+define( 'WP_LINK_SWEEPER_VERSION', '1.1.0' );
 define( 'WP_LINK_SWEEPER_PLUGIN_FILE', __FILE__ );
 define( 'WP_LINK_SWEEPER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WP_LINK_SWEEPER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

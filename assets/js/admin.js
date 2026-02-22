@@ -27,6 +27,7 @@
 			// Broken Links - Actions
 			$(document).on('click', '.ls-recheck-link', this.recheckLink.bind(this));
 			$(document).on('click', '.ls-ignore-link', this.ignoreLink.bind(this));
+			$('#ls-export-csv').on('click', this.exportToCSV.bind(this));
 
 			// Replace - Preview and Execute
 			$('#ls-preview-replacement').on('click', this.previewReplacement.bind(this));
@@ -310,6 +311,35 @@
 					}
 				}
 			});
+		},
+
+		/**
+		 * Export to CSV
+		 */
+		exportToCSV: function(e) {
+			e.preventDefault();
+
+			// Get current filter values from URL parameters
+			var urlParams = new URLSearchParams(window.location.search);
+			var status = urlParams.get('status_filter') || 'broken';
+			var postType = urlParams.get('post_type_filter') || 'all';
+			var domain = urlParams.get('domain_filter') || '';
+
+			// Create a form and submit it
+			var form = $('<form>', {
+				'method': 'POST',
+				'action': wpLinkSweeper.ajaxUrl
+			});
+
+			// Add form fields
+			form.append($('<input>', {'type': 'hidden', 'name': 'action', 'value': 'ls_export_csv'}));
+			form.append($('<input>', {'type': 'hidden', 'name': 'nonce', 'value': wpLinkSweeper.nonce}));
+			form.append($('<input>', {'type': 'hidden', 'name': 'status', 'value': status}));
+			form.append($('<input>', {'type': 'hidden', 'name': 'post_type', 'value': postType}));
+			form.append($('<input>', {'type': 'hidden', 'name': 'domain', 'value': domain}));
+
+			// Append to body and submit
+			form.appendTo('body').submit().remove();
 		},
 
 		/**

@@ -46,6 +46,7 @@ class Admin {
 		add_action( 'wp_ajax_ls_delete_rule', array( $this, 'ajax_delete_rule' ) );
 		add_action( 'wp_ajax_ls_toggle_rule', array( $this, 'ajax_toggle_rule' ) );
 		add_action( 'wp_ajax_ls_apply_rules', array( $this, 'ajax_apply_rules' ) );
+		add_action( 'wp_ajax_ls_export_csv', array( $this, 'ajax_export_csv' ) );
 	}
 
 	/**
@@ -484,5 +485,24 @@ class Admin {
 		} else {
 			wp_send_json_error( $result );
 		}
+	}
+
+	/**
+	 * AJAX: Export to CSV.
+	 */
+	public function ajax_export_csv() {
+		check_ajax_referer( 'wp_link_sweeper_nonce', 'nonce' );
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Permission denied.', 'wp-link-sweeper' ) );
+		}
+
+		$args = array(
+			'status'    => isset( $_POST['status'] ) ? sanitize_text_field( $_POST['status'] ) : 'all',
+			'post_type' => isset( $_POST['post_type'] ) ? sanitize_text_field( $_POST['post_type'] ) : 'all',
+			'domain'    => isset( $_POST['domain'] ) ? sanitize_text_field( $_POST['domain'] ) : '',
+		);
+
+		Exporter::export_to_csv( $args );
 	}
 }

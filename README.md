@@ -216,9 +216,12 @@ composer install
 
 ## Roadmap
 
-### Version 1.1 (Planned)
+### Version 1.1 (Released)
 
-- [ ] Export broken links to CSV
+- [x] Export broken links to CSV
+
+### Version 1.2 (Planned)
+
 - [ ] Email notifications for broken links
 - [ ] Scan custom fields (Yoast, RankMath)
 - [ ] Deeper Elementor/page builder support
@@ -274,6 +277,14 @@ Special thanks to:
 - Contributors (see [CONTRIBUTORS.md](CONTRIBUTORS.md))
 
 ## Changelog
+
+### 1.1.0 - 2024-02-XX
+
+- **NEW**: CSV Export functionality
+- Export broken links to CSV file
+- Respects current filters (status, post type, domain)
+- Includes all link details and affected posts
+- Enhanced data portability for reporting
 
 ### 1.0.0 - 2024-01-XX
 
